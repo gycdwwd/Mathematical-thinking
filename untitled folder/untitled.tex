@@ -1,0 +1,167 @@
+%启动latex源程序
+\documentclass[UTF-8]{ctexart}
+%调用宏包
+%geometry：利用 geometry 可以很方便的设置页面的大小。由于可以自动居中排放页面，自动计算并平衡页面各部分如页眉、页脚、左右边空等的大小，所以只需给出很少的信息就能得到满意的页面。
+%AMSLaTeX：作为 AMSTeX 在 LaTeX 中地实现，AMSLaTeX 包括两部分，一是amsmath宏包，主要的目的是用来排版数学符号和公式，其中专门有 amsthm 宏包，提供对定理的排版。另一部分是amscls，提供了美国数学会要求的论文和书籍的格式。
+%listings：排版 C, C++, Pascal 等源代码，提供语法加亮显示的功能。
+%curves：不需要太多的TeXmemory,就能得到各种具有连续角度的曲线，包括 bezrer 曲线，虚线等。
+%fancyhdr：用 fancyhdr 来设置页眉和页脚十分方便，而且可以在配合 CCT、CJK来设置中文的页眉等。
+%graphics:插入图片所需宏包
+\usepackage{amsmath} \usepackage{graphicx} \usepackage{amsmath} \usepackage{type1cm} \usepackage{lipsum} \usepackage{lastpage}
+\usepackage{geometry} \usepackage{fancyhdr}
+
+
+
+
+%预处理
+\lhead{GYC\#20001019}
+\rhead{page \thepage{} of 4 Pages}
+\pagestyle{fancy}
+\geometry{papersize={21cm,29.7cm}}
+\geometry{left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm}
+\cfoot{\thepage}
+
+
+
+%开始论文撰写
+\begin{document}
+\title{15A论文分析}
+\author{葛雨辰}
+\date{\today}
+\maketitle
+
+
+
+\begin{abstract}         %摘要部分
+\small{这是一篇关于葛雨辰成才的小论文。}
+\end{abstract}
+
+
+
+
+%newcommand处理操作
+\newcommand{\song}{\CJKfamily{song}}       % 宋体
+\newcommand{\fs}{\CJKfamily{fs}}           % 仿宋体
+\newcommand{\kai}{\CJKfamily{kai}}         % 楷体
+\newcommand{\hei}{\CJKfamily{hei}}         % 黑体
+\newcommand{\li}{\CJKfamily{li}}           % 隶书
+\newcommand{\yihao}{\fontsize{26pt}{36pt}\selectfont}          
+% 一号, 1.4 倍行距
+\newcommand{\erhao}{\fontsize{22pt}{28pt}\selectfont}          
+% 二号, 1.25倍行距
+\newcommand{\xiaoer}{\fontsize{18pt}{18pt}\selectfont}        
+% 小二, 单倍行距
+\newcommand{\sanhao}{\fontsize{16pt}{24pt}\selectfont}        
+% 三号, 1.5倍行距
+\newcommand{\xiaosan}{\fontsize{15pt}{22pt}\selectfont}        
+% 小三, 1.5倍行距
+\newcommand{\sihao}{\fontsize{14pt}{21pt}\selectfont}          
+% 四号, 1.5 倍行距
+\newcommand{\banxiaosi}{\fontsize{13pt}{19.5pt}\selectfont}    
+% 半小四, 1.5倍行距
+\newcommand{\xiaosi}{\fontsize{12pt}{18pt}\selectfont}        
+% 小四, 1.5倍行距
+\newcommand{\dawuhao}{\fontsize{11pt}{11pt}\selectfont}        
+% 大五号, 单倍行距
+\newcommand{\wuhao}{\fontsize{10.5pt}{15.75pt}\selectfont}     
+% 五号, 单倍行距 
+
+
+
+
+\tableofcontents
+\section{2020新年快乐}
+	\heiti\sanhao{2019寒假初作：15A论文分析}
+	\songti\xiaosi{葛雨辰}
+	\songti\xiaosi{\today}
+	\subsection{未来科学家}
+		\subsubsection{数学家葛雨辰}
+			\paragraph{1}
+				\lipsum[1]
+					\subparagraph{2}
+						\lipsum[1]
+		\subsubsection{物理学家葛雨辰}
+			\paragraph{3}
+				\lipsum[2] 
+		\subsubsection{化学家葛雨辰}
+			\paragraph{4}
+				\lipsum[3]
+		\subsubsection{材料学家葛雨辰}
+			\paragraph{5}
+				\lipsum[4]
+
+
+
+
+\begin{center}
+	\huge{day 2020.1.26}
+\end{center}
+
+\begin{equation}
+	bab^{-1}\in{H} \quad \frac{1}{2} \quad \sqrt{x}
+\end{equation}
+
+\begin{align}
+&a = b+c+d \\
+&x = y+z
+\end{align}
+
+
+
+\begin{center}
+	{Table: Notation}
+	\end{center}
+	\begin{center}
+		\begin{tabular}{*3{c}}
+		\hline
+		Abbreviation & Description\\
+		\hline
+		$E_{avg}$ & 选定规模处理厂单位处理能耗 \\
+		$E_{sub}$ & 活性炭吸附工艺单位处理能耗容许值 \\
+		$E_{tar}$ & 活性炭吸附工艺单位处理能耗目标值 \\
+		\hline
+		\end{tabular}
+
+		$$E_{save}=E_{avg}-\frac{E_{tar}+E_{sub}}{2}}$$
+	\end{center}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\begin{thebibliography}{99}   
+	\bibitem
+		{shiye}失野健太郎.几何的有名定理.上海科学技术出版社，1986.                  
+	\bibitem{quanjing}
+		曲安金.商高、赵爽与刘辉关于勾股定理的证明.数学传播, 20(3), 1998. 
+
+	\bibitem{Kline}克莱因.古今数学思想.上海科学技术出版社，2002.
+\end{thebibliography}
+
+
+
+
+\begin{appendix}            
+	\section{附录}
+	\songti\xiaosi 数学建模
+\end{appendix}
+
+
+
+
+\end{document}
